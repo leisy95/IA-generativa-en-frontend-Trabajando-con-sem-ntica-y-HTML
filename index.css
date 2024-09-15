@@ -140,9 +140,7 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-   
-
-    
+  
 }
 
 .ofertas__card--precio {
@@ -177,6 +175,7 @@ img {
     align-items: stretch;
     gap: 24px;
     margin-bottom: 112px;
+    padding: 0;
 }
 
 .busca__categoria {
@@ -214,7 +213,6 @@ span.material-symbols-outlined {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .destinos__elemento--image {
@@ -371,4 +369,56 @@ span.material-symbols-outlined {
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 16px;
+}
+
+.footer__social-media-icons {
+    list-style: none;
+}
+
+@media (max-width: 1260px) {
+
+    .encabezado__container {
+        padding: 5%;
+    }
+    .busca {
+        padding: 30px;
+    }
+
+    .busca__categoria {
+        width: 251px;
+        height: auto;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .ofertas,
+    .busca,
+    .destinos,
+    .pago,
+    .testimonios,
+    .footer__container {
+        padding: 50px;
+    }
+    .busca__categoria {
+        width: 181px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .ofertas,
+    .busca,
+    .destinos,
+    .pago,
+    .testimonios,
+    .footer__container {
+        padding: 50px;
+    }
+
+    .busca__categorias {
+        display: flex;
+        
+    }
 }
