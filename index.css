@@ -30,7 +30,7 @@
 
 .encabezado__navegacion--elemento a{
     color: var(--blanco);
-    font-size: 24px;
+    font-size: 1,5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -44,7 +44,7 @@
     max-width: 1200px;
     color: var(--grafito, #222);
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -66,7 +66,7 @@
 .busca__titulo,
 .ofertas__titulo {
     color: var(--grafito);
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -123,12 +123,10 @@ img {
     background-image: url("./img/san-andreas.png");
 }
 
-
-
 .ofertas__card--destino-tipo {
     color: var(--blanco);
     text-align: center;
-    font-size: 20px;
+    font-size: 1,25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
@@ -136,7 +134,7 @@ img {
 }
 
 .ofertas__card--destino-nombre {
-    font-size: 48px;
+    font-size: 3remx;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -144,7 +142,7 @@ img {
 }
 
 .ofertas__card--precio {
-    font-size: 40px;
+    font-size: 2,5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -163,7 +161,7 @@ img {
 
 .destinos__elemento--boton-texto,
 .ofertas__card--boton-texto {
-    font-size: 20px;
+    font-size: 1,25rem;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
@@ -181,7 +179,7 @@ img {
 .busca__categoria {
     color: var(--grafito, #222);
     text-align: center;
-    font-size: 28px;
+    font-size: 1,75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -196,7 +194,7 @@ img {
 
 span.material-symbols-outlined {
     color: var(--gris-oscuro, #8C8C8C);
-    font-size: 80px;
+    font-size: 5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -221,7 +219,7 @@ span.material-symbols-outlined {
 
 .destinos__elemento--nombre {
     color: var(--grafito, #222);
-    font-size: 28px;
+    font-size: 1,75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -230,7 +228,7 @@ span.material-symbols-outlined {
 
 .destinos__elemento--descripcion {
     color: var(--grafito, #222);
-    font-size: 20px;
+    font-size: 1,25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
@@ -249,7 +247,7 @@ span.material-symbols-outlined {
 
 .pago__condiciones--destaque {
     color: var(--grafito, #222);
-    font-size: 28px;
+    font-size: 1,75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -258,7 +256,7 @@ span.material-symbols-outlined {
 
 .pago__condiciones--detalles {
     color: var(--grafito, #222);
-    font-size: 20px;
+    font-size: 1,25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
@@ -297,7 +295,7 @@ span.material-symbols-outlined {
 
 .testimonios__texto {
     color: var(--grafito, #222);
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
@@ -316,7 +314,7 @@ span.material-symbols-outlined {
 .testimonios__autor--nombre {
     color: var(--grafito, #222);
     text-align: center;
-    font-size: 20px;
+    font-size: 1,25rem;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
@@ -352,7 +350,7 @@ span.material-symbols-outlined {
 
 .footer__text-info {
     color: var(--neutral-c, #F5F5F5);
-    font-size: 20px;
+    font-size: 1,25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 160% */
@@ -364,7 +362,7 @@ span.material-symbols-outlined {
 
 .footer__social-media-text {
     color: var(--neutral-c, #F5F5F5);
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
@@ -417,8 +415,26 @@ span.material-symbols-outlined {
         padding: 50px;
     }
 
+    .banner__descripcion,
+    .ofertas,
+    .busca__categorias,
+    .destinos__lista,
+    .pago,
+    .testimonios {
+        margin-bottom: 0;
+    }
+
+
     .busca__categorias {
         display: flex;
-        
+        flex-wrap: wrap;
+        gap: 10px;
     }
+
+    .busca__categoria {
+        flex: 1 0 200px; 
+        padding: 15px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+      }
 }
